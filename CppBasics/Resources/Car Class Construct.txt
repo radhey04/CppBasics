@@ -1,0 +1,85 @@
+Car :
+	Properties :
+		Speed
+		EngineRPM
+		FuelQuantity
+		FuelTankCapacity // 20 litters
+		AcceleratorPosition // 0 to 5.0
+		BrakePosition // 0 to 5.0
+		ClutchPosition // 0 to 5.0
+		SteerWheelPosition // 0 degree to +-180 deg
+		EngineTemperature
+		IndicatorPosition // Left/Right/Nuetral
+		BrakeLight // ON/OFF
+		CarKeyPosition // On/Off/Locked
+		GearPosition // N(eutral) / R(everse) / 1/2/3/4/5 --> Char
+		EngineState // Running / Shutdown
+		
+		// Low fuel indication
+		// RPM
+		
+	Methods : 
+		
+	
+	Supported use cases :
+		User should be able to turn the key on and start the car.
+			Car engine starts when :
+				Key is turned on AND (Clutch is pressed (at position 5.0) OR Gear position is Neutral)
+			When the key it turned ON, Car Engine starts, fuel starts depleting at a rate of 0.001 lt/sec.
+		User should be able to shift to a desired gear after pressing the clutch. // Cannot put reverse gear while speed is > 0;
+			Shift Gear :
+				Only when clutch is pressed.
+					Shift to a new gear and then user can release the clutch.
+				Car Max speed = gearPosition * 40;
+				Engine RPM = gearPosition * 1200 + 300*accelPosition/(high-low); // Reverse RPM = 1200 ; Neutral RPM = 1200;
+				Fuel Burn Rate = 0.002 * gearPosition ; // Reverse Gear - 0.002;
+					// Burn rate is 0.002 to 0.005 : 0 acceleration to 5.0 acceleration.
+				EngineTemp = 50 + Engine RPM/60;
+		User should be able to accelerate the vehicle(car).
+			When accelerating : 
+				Engine RPM = gearPosition * 1200 + 300*accelPosition/(high-low); // Reverse RPM = 1200 ; Neutral RPM = 1200;
+				Fuel Burn Rate = 0.002 * gearPosition ; // Reverse Gear - 0.002;
+					// Burn rate is 0.002 to 0.005 : 0 acceleration to 5.0 acceleration.
+				EngineTemp = 50 + Engine RPM/60;
+				
+		user should be able to apply brakes on the vehicle.
+			When applying brakes : 
+				Apply decceleration to Car's Speed.
+		User should be able to get fuel added to the vehicle tank.
+			It takes time to refuel the tank - 50 litters/min.
+			Fuel quantity cannot be increased beyond tank capacity.
+		User should be able to turn on an indicator based on the turn they are taking Right/Left.
+			Turn Left/Right lights ON/off based on indicator position.
+			
+			
+			
+			
+**********
+ Version 1 :
+	Car :
+		Properties : 
+			Manufacturer;
+			Name;
+			Model;
+			No gears, no clutch, just one peddle - Accelerator.
+			Speed
+			AcceleratorPosition
+			EngineState
+			
+		Methods : 
+			GetManufacturer();
+			GetName();
+			GetModel();
+			GetSpeed();
+			
+			GetAcceleratorPosition();
+			ChangeAcceleratorPosition(+- by delta)
+
+			GetEngineState();
+			
+			GetCarKeyPosition();
+			SetCarKeyPosition(position);
+			
+			
+
+		

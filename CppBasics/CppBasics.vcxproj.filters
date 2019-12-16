@@ -13,9 +13,24 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\AbstractionOOP">
+      <UniqueIdentifier>{7293816a-16ab-4773-acb7-c5dd21a39322}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\InheritanceOOP">
+      <UniqueIdentifier>{7e066113-df2f-4714-a997-e2b83980c8eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\EncapsulationOOP">
+      <UniqueIdentifier>{ad765b4f-ef7d-4b37-b9d7-a655d3ca96bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\PolymorphismOOP">
+      <UniqueIdentifier>{dd82fcc9-4e39-471c-953e-03a8b82ba20c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
+    <Text Include="Resources\SampleData.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -24,12 +39,54 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Encapsulation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HatchbackCar.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MarutiSwift.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SUV.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="HyundaiCreta.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CppBasics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Encapsulation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Car.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HatchbackCar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MarutiSwift.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SUV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HyundaiCreta.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

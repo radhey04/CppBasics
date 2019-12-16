@@ -9,7 +9,12 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include <iostream>
 
+void pointerOperations();
 
+void loopFunctionality();
+
+void fileOperations();
 
 // TODO: reference additional headers your program requires here
