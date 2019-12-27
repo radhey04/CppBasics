@@ -146,23 +146,30 @@
     <Text Include="Resources\SampleData.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdvancedTopics.h" />
     <ClInclude Include="Car.h" />
-    <ClInclude Include="Encapsulation.h" />
+    <ClInclude Include="CompilationLinking.h" />
     <ClInclude Include="HatchbackCar.h" />
+    <ClInclude Include="HatchSuv.h" />
     <ClInclude Include="HyundaiCreta.h" />
     <ClInclude Include="MarutiSwift.h" />
+    <ClInclude Include="MemoryManagement.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="SUV.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Templates.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="AdvancedTopics.cpp" />
     <ClCompile Include="Car.cpp" />
+    <ClCompile Include="CompilationLinking.cpp" />
     <ClCompile Include="CppBasics.cpp" />
-    <ClCompile Include="Encapsulation.cpp" />
     <ClCompile Include="HatchbackCar.cpp" />
+    <ClCompile Include="HatchSuv.cpp" />
     <ClCompile Include="HyundaiCreta.cpp" />
     <ClCompile Include="MarutiSwift.cpp" />
+    <ClCompile Include="MemoryManagement.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -171,6 +178,7 @@
     </ClCompile>
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="SUV.cpp" />
+    <ClCompile Include="Templates.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

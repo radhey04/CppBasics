@@ -1,7 +1,7 @@
 #pragma once
 #include "Car.h"
 class SUV :
-    public Car
+    virtual public Car
 {
 public:
     SUV();

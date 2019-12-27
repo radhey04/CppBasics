@@ -2,7 +2,7 @@
 #include "Car.h"
 
 class HatchbackCar :
-    public Car
+    virtual public Car
 {
 public:
     HatchbackCar();

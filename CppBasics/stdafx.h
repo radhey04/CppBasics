@@ -10,6 +10,18 @@
 #include <stdio.h>
 #include <tchar.h>
 #include <iostream>
+#include <fstream>
+#include <string>
+
+#include "Student.h"
+#include "MarutiSwift.h"
+#include "HyundaiCreta.h"
+
+#include "Templates.h"
+#include "MemoryManagement.h"
+#include "CompilationLinking.h"
+#include "AdvancedTopics.h"
+#include "HatchSuv.h"
 
 void pointerOperations();
 

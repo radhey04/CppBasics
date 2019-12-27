@@ -4,6 +4,7 @@
 
 Car::Car()
 {
+    cout << "Car default constructor called." << endl;
 }
 
 //Car::Car(float speed, float acceleratorPosition, EngineStates engineState, CarKeyPositions keyPosition)
@@ -17,6 +18,7 @@ Car::Car()
 
 Car::Car(string manufacturer, string name, string model, float speed, float acceleratorPosition, EngineStates engineState, CarKeyPositions keyPosition)
 {
+    cout << "Car parameterised constructor called." << endl;
     // First time contstruct parameters : 
     this->Manufacturer = manufacturer;
     this->Name = name;

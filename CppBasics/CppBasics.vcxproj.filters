@@ -13,17 +13,35 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\AbstractionOOP">
-      <UniqueIdentifier>{7293816a-16ab-4773-acb7-c5dd21a39322}</UniqueIdentifier>
+    <Filter Include="Source Files\OOP">
+      <UniqueIdentifier>{f32e52c2-5c5f-45c3-b37b-6c698f9b8bb4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\InheritanceOOP">
-      <UniqueIdentifier>{7e066113-df2f-4714-a997-e2b83980c8eb}</UniqueIdentifier>
+    <Filter Include="Header Files\OOP">
+      <UniqueIdentifier>{33246a72-bf1d-403b-8dee-3fa21dfe15fb}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\EncapsulationOOP">
-      <UniqueIdentifier>{ad765b4f-ef7d-4b37-b9d7-a655d3ca96bd}</UniqueIdentifier>
+    <Filter Include="Source Files\TemplateProgramming">
+      <UniqueIdentifier>{dcbd5fbb-8bb1-4cd4-8044-fe2110202dea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\PolymorphismOOP">
-      <UniqueIdentifier>{dd82fcc9-4e39-471c-953e-03a8b82ba20c}</UniqueIdentifier>
+    <Filter Include="Header Files\TemplateProgramming">
+      <UniqueIdentifier>{7d44a1d1-a723-43be-902d-d6ecada7413d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MemoryManagement">
+      <UniqueIdentifier>{e1800efb-3178-4932-b54a-f242187a2dad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MemoryManagement">
+      <UniqueIdentifier>{15c212ef-3ebf-4878-983b-d67e29f39e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Compilation-Linking">
+      <UniqueIdentifier>{7b310033-c0bf-4725-903f-538621ed8aa3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Compilation-Linking">
+      <UniqueIdentifier>{d9cb51b7-180c-4947-809b-daaca16303a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\AdvancedTopics">
+      <UniqueIdentifier>{bfd982f3-1175-4eaf-9463-bb40aef0af46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\AdvancedTopics">
+      <UniqueIdentifier>{7534e6d7-ae44-40ec-8c86-0161714d30b5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -39,26 +57,38 @@
     <ClInclude Include="targetver.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Student.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Encapsulation.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Car.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\OOP</Filter>
     </ClInclude>
     <ClInclude Include="HatchbackCar.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MarutiSwift.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SUV.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\OOP</Filter>
     </ClInclude>
     <ClInclude Include="HyundaiCreta.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\OOP</Filter>
+    </ClInclude>
+    <ClInclude Include="MarutiSwift.h">
+      <Filter>Header Files\OOP</Filter>
+    </ClInclude>
+    <ClInclude Include="SUV.h">
+      <Filter>Header Files\OOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files\OOP</Filter>
+    </ClInclude>
+    <ClInclude Include="Templates.h">
+      <Filter>Header Files\TemplateProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryManagement.h">
+      <Filter>Header Files\MemoryManagement</Filter>
+    </ClInclude>
+    <ClInclude Include="CompilationLinking.h">
+      <Filter>Header Files\Compilation-Linking</Filter>
+    </ClInclude>
+    <ClInclude Include="HatchSuv.h">
+      <Filter>Header Files\OOP</Filter>
+    </ClInclude>
+    <ClInclude Include="AdvancedTopics.h">
+      <Filter>Header Files\AdvancedTopics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -68,26 +98,38 @@
     <ClCompile Include="CppBasics.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Student.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Encapsulation.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="MarutiSwift.cpp">
+      <Filter>Source Files\OOP</Filter>
     </ClCompile>
     <ClCompile Include="Car.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="HatchbackCar.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MarutiSwift.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SUV.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\OOP</Filter>
     </ClCompile>
     <ClCompile Include="HyundaiCreta.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="HatchbackCar.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="SUV.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Student.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="Templates.cpp">
+      <Filter>Source Files\TemplateProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryManagement.cpp">
+      <Filter>Source Files\MemoryManagement</Filter>
+    </ClCompile>
+    <ClCompile Include="CompilationLinking.cpp">
+      <Filter>Source Files\Compilation-Linking</Filter>
+    </ClCompile>
+    <ClCompile Include="HatchSuv.cpp">
+      <Filter>Source Files\OOP</Filter>
+    </ClCompile>
+    <ClCompile Include="AdvancedTopics.cpp">
+      <Filter>Source Files\AdvancedTopics</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

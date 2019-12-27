@@ -2,16 +2,17 @@
 //
 
 #include "stdafx.h"
-#include <fstream>
-#include <string>
-#include "Student.h"
-#include "MarutiSwift.h"
-#include "HyundaiCreta.h"
 
 using namespace std;
 
+void addExtraLines() {
+    cout << endl;
+    cout << "*****************************" << endl;
+    cout << endl;
+}
 void pointerOperations() {
 
+    addExtraLines();
     cout << "Pointers to variables" << endl;
     // Pointers to variables 
     int var = 20;
@@ -42,9 +43,8 @@ void pointerOperations() {
 
 void loopFunctionality() {
 
+    addExtraLines();
     // For loop :
-    cout << endl;
-    cout << endl;
     cout << "For loop" << endl;
 
     int someValue[3] = { 23, 26, 28 };
@@ -56,15 +56,15 @@ void loopFunctionality() {
 
 // Advanced data types :
 void advancedDataTypes() {
+    addExtraLines();
     Student* student = new Student(1, "radhey", 8.35, "9987654321");
     student->PrintStudentDetails();
 }
 
 void fileOperations() {
-
+    
+    addExtraLines();
     // File operations :
-    cout << endl;
-    cout << endl;
     cout << "File operations" << endl;
 
     string data;
@@ -101,24 +101,85 @@ void fileOperations() {
 
 // Testing inheritance :
 void playWithCar() {
+    addExtraLines();
     MarutiSwift * swift = new MarutiSwift("Suzuki", "Swift", "VDI");
     swift->PrintCarDetails();
+    HyundaiCreta * creta = new HyundaiCreta("Hyundai", "Creta", "SX");
 
-    Car * cars[2];
-    cars[0] = swift;
+    Car * cars[] = {swift, creta};
 
     //cars[0]->ChangeAcceleratorPosition(0.05f);
 
-    HyundaiCreta * creta = new HyundaiCreta("Hyundai", "Creta", "SX");
-
-    cars[1] = creta;
-    cout << sizeof(cars) << endl;
-    cout << sizeof(Car) << endl;
-
-    for (int carIndex = 0; carIndex < 2; carIndex++) {
-        cout << "carIndex : " << carIndex << endl;
-        cars[carIndex]->ChangeAcceleratorPosition(0.05f);
+    for (Car *car : cars) {
+        car->ChangeAcceleratorPosition(0.05f);
     }
+}
+
+void playWithTemplates() {
+    addExtraLines();
+    Templates * tTemplate = new Templates();
+    tTemplate->StartTesting();
+
+}
+
+void playWithMemoryManagement() {
+    addExtraLines();
+    MemoryManagement memoryManagement = MemoryManagement("A");
+
+    MemoryManagement * memoryManagement1 = new MemoryManagement("B");
+    delete memoryManagement1;
+
+    shared_ptr<MemoryManagement> memoryManagement2;
+
+    if (true) {
+        shared_ptr<MemoryManagement> memoryManagement3 = make_shared<MemoryManagement>("C");
+        memoryManagement2 = memoryManagement3;
+    }
+    cout << "Name : " << memoryManagement2->GetName() << endl;
+
+
+}
+
+void playWithCompilationAndLinking() {
+    CompilationLinking * compilationLinking = new CompilationLinking();
+    compilationLinking->TestFunction();
+
+    delete compilationLinking;
+}
+
+void playWithAdvancedTopics() {
+    AdvancedTopics * advancedTopics = new AdvancedTopics();
+    advancedTopics->LambdaExpressions();
+
+    delete advancedTopics;
+}
+
+void playWithHatchSuvCar() {
+    HatchSuv * hatchSuv = new HatchSuv("Radhey", "ThetaX", "T2");
+
+    delete hatchSuv;
+}
+
+void playWithOperatorOverloading() {
+    AdvancedTopics operatorOverloading = AdvancedTopics(26);
+    ++operatorOverloading;
+
+    AdvancedTopics at1(12);
+    AdvancedTopics at2(15);
+
+    AdvancedTopics * at3 = at1 + at2;
+
+    cout << "Number at3 is : " << at3->getNumber() << endl;
+
+    Complex complex1(1,1);// = new Complex(15, 6);
+    Complex complex2(1,2);// = new Complex(10, 60);
+
+    Complex * complex3 = complex1 + complex2;
+
+    complex3->printNumber();
+
+
+    //delete operatorOverloading;
 }
 
 int main()
@@ -131,8 +192,22 @@ int main()
     
     //fileOperations();
 
-    playWithCar();
+    // playWithCar();
 
+    //playWithTemplates();
+
+    //playWithMemoryManagement();
+
+    // playWithCompilationAndLinking();
+
+    //playWithAdvancedTopics();
+
+    // playWithHatchSuvCar();
+
+    playWithOperatorOverloading();
+
+    char temp;
+    cin >> temp;
     getchar();
     return 0;
 }
