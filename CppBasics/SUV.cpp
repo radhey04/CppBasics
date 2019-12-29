@@ -4,6 +4,7 @@
 
 SUV::SUV()
 {
+    cout << "SUV created : Default;" << endl;
 }
 
 SUV::SUV(string manufacturer, string name, string model) : Car(manufacturer, name, model)
@@ -14,4 +15,5 @@ SUV::SUV(string manufacturer, string name, string model) : Car(manufacturer, nam
 
 SUV::~SUV()
 {
+    cout << "SUV destructed." << endl;
 }

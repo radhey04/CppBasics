@@ -22,6 +22,7 @@
 #include "CompilationLinking.h"
 #include "AdvancedTopics.h"
 #include "HatchSuv.h"
+#include "ExceptionHAndling.h"
 
 void pointerOperations();
 

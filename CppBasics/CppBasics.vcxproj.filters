@@ -43,6 +43,12 @@
     <Filter Include="Header Files\AdvancedTopics">
       <UniqueIdentifier>{7534e6d7-ae44-40ec-8c86-0161714d30b5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\ExceptionHandling">
+      <UniqueIdentifier>{00ba5195-ca79-46f4-85f9-ba366e3cba7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ExceptionHandling">
+      <UniqueIdentifier>{5e484c3c-e877-4553-aa07-1c639d6c1ba2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -90,6 +96,9 @@
     <ClInclude Include="AdvancedTopics.h">
       <Filter>Header Files\AdvancedTopics</Filter>
     </ClInclude>
+    <ClInclude Include="ExceptionHandling.h">
+      <Filter>Header Files\ExceptionHandling</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -130,6 +139,9 @@
     </ClCompile>
     <ClCompile Include="AdvancedTopics.cpp">
       <Filter>Source Files\AdvancedTopics</Filter>
+    </ClCompile>
+    <ClCompile Include="ExceptionHandling.cpp">
+      <Filter>Source Files\ExceptionHandling</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

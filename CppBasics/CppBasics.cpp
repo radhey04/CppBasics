@@ -182,6 +182,17 @@ void playWithOperatorOverloading() {
     //delete operatorOverloading;
 }
 
+void playWithExceptionHandling() {
+    ExceptionHandling * exceptionHandling = new ExceptionHandling();
+    //exceptionHandling->SimpleTryCatchThrowExample();
+    
+    //exceptionHandling->UncaughtException();
+    //exceptionHandling->CatchingExceptionInInheritance();
+
+    //exceptionHandling->CustomExceptionExample();
+    exceptionHandling->NestedException();
+}
+
 int main()
 {
     cout << "Hello Dear!" << endl;
@@ -204,7 +215,9 @@ int main()
 
     // playWithHatchSuvCar();
 
-    playWithOperatorOverloading();
+    //playWithOperatorOverloading();
+
+    playWithExceptionHandling();
 
     char temp;
     cin >> temp;

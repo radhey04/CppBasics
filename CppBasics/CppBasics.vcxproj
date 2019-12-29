@@ -149,6 +149,7 @@
     <ClInclude Include="AdvancedTopics.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="CompilationLinking.h" />
+    <ClInclude Include="ExceptionHandling.h" />
     <ClInclude Include="HatchbackCar.h" />
     <ClInclude Include="HatchSuv.h" />
     <ClInclude Include="HyundaiCreta.h" />
@@ -165,6 +166,7 @@
     <ClCompile Include="Car.cpp" />
     <ClCompile Include="CompilationLinking.cpp" />
     <ClCompile Include="CppBasics.cpp" />
+    <ClCompile Include="ExceptionHandling.cpp" />
     <ClCompile Include="HatchbackCar.cpp" />
     <ClCompile Include="HatchSuv.cpp" />
     <ClCompile Include="HyundaiCreta.cpp" />

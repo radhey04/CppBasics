@@ -33,6 +33,7 @@ Car::Car(string manufacturer, string name, string model, float speed, float acce
 
 Car::~Car()
 {
+    cout << "Car : destructed." << endl;
 }
 
 string Car::GetManufacturer()
